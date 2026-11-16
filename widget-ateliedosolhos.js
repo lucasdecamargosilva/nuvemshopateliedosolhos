@@ -1122,9 +1122,9 @@ setInterval(function(){var el=document.getElementById('q-step-error');if(!el)ret
                 imp('color', cor);
                 imp('border', '1.5px solid ' + cor);
                 imp('box-shadow', 'none');
-                // Runzeiro: 10px de respiro entre o Comprar e o provador (21/10)
+                // Ateliê: provador colado no Comprar, 6px de respiro (pedido do Lucas 16/11) — compensa a margem do tema
                 const mb = parseFloat(cs.marginBottom) || 0;
-                imp('margin', Math.max(0, 10 - mb) + 'px 0 14px');
+                imp('margin', (6 - mb) + 'px 0 14px');
                 imp('opacity', '1');
                 btn.querySelectorAll('svg, i, img').forEach(el => { el.style.color = 'inherit'; el.style.fill = 'currentColor'; });
             } catch (e) {}
